@@ -12,11 +12,10 @@ cMain = {};
 cMain.__index = cMain;
 
 -- DOFILES --
--- Why do I use dofile? Because I need to get the classes into the global namespace.
+-- Why do I use dofile? Because I need to get the classes into the global LUA VM namespace.
 -- Require is a failure, so I use dofile to retrieve the classes.
 
 dofile("screens/cMainScreen.lua");
-
 
 
 --[[
