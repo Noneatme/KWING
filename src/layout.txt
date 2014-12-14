@@ -1,0 +1,33 @@
+Script = {};
+Script.__index = Script;
+
+--[[
+
+]]
+
+-- // New			   // --
+-- // Returns: Object  // --
+
+function Script:new(...)
+	local obj = setmetatable({}, {__index = self});
+	if obj.constructor then
+		obj:constructor(...);
+	end
+	return obj;
+end
+
+
+-- // Constructor		// --
+-- // Returns: nil		// --
+
+function Script:constructor(...)
+	-- Klassenvariablen --
+	
+	
+	-- Methoden --
+	
+	
+	-- Events --
+end
+
+-- EVENT HANDLER --
